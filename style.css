@@ -1,0 +1,67 @@
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+
+.number { color: magenta; }
+.boolean { color: blue; }
+.null { color: rgb(0, 140, 255); }
+.key { color: slateblue; }
+.left{color:green}
+.right{color:red;}
+
+#object{
+  font-size: 1.1rem;
+  font-weight: 650;
+  letter-spacing: 0.09rem;
+  font-family: 'Roboto Condensed';
+}
+
+button{
+  min-width: 100px;
+  border: 2px solid salmon;
+  background-color: transparent;
+  padding: 0.3rem 0;
+  position: relative;
+  transition: 0.2s ease-out;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 0.08rem;
+  margin: 0 0.4rem;
+}
+button::after{
+  content:"";
+  position: absolute;
+  background-color: salmon;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.2s ease-out;
+}
+button:nth-child(1){
+  margin-right: 0;
+}
+button:nth-child(5){
+  margin-left: 0;
+}
+
+button:hover{
+  transition: 0.2s ease-out;
+  color:whitesmoke;
+  border: 2px solid #444;
+}
+button:hover::after{
+  transition: 0.2s ease-out;
+  height: 100%;
+  z-index: -1;
+}
+input{
+  height: 25px;
+}
+
+#interface_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
